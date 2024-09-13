@@ -1,0 +1,1083 @@
+/*Header Start*/
+.navbar * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+header {
+    position:fixed;
+    top: 0; left:0; right: 0;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 1px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+a.logo {
+    width: 24%
+}
+header .navbar ul {
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #c90707;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background: #333;
+    color: white;
+}
+#menu-bar {
+    display:none;
+}
+header label {
+    font-size: 20px;
+    color: #c90707;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:1072px){
+    header {
+        padding:20px;
+    }
+
+    header label {
+        display: initial;
+        margin-right: 35px;
+    }
+
+    header .navbar {
+        position: absolute;
+        top:100%; left:0; right:0;
+        background: white;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+#menu-bar:checked ~ .navbar {
+    display: initial;
+}
+
+}
+/*Header End*/
+
+
+/*About Me Start*/
+.ampt1 {
+    background-color:black;
+    height: 60em;
+}
+.ampt1 h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 80px;
+}
+.ampt1 hr {
+    width: 30%;
+    margin-top: -32px;
+}
+.ampt1 p {
+    width: 1200px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.rotban {
+    
+    display: flex;
+    margin: auto;
+    margin-top: -390px;
+    margin-bottom: -390px;
+   
+    width: 1320px;
+    height: 760px;
+    border: 20px solid white;
+    overflow: hidden;
+}
+.ampt2 {
+    background-color: #ce2424;
+    height: 35em;
+    z-index: -1;
+}
+/* Carousel Start */
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    height: 100%;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+.carousel-item.active {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+button[class^=carousel-control] {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    padding: 0;
+    color: blue;
+    background-color: transparent;
+    border: 0;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+    font-size: 1rem;
+}
+.carousel-control-next {
+    right: 0;
+}
+.carousel-control-prev {
+    left: 0;
+}
+button[class^=carousel-control]:hover {
+    color: pink;
+    outline: 0;
+    opacity: 0.9;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-size:0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+.carousel-indicators > .carousel-indicator {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    font-size: 0;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -9999px;
+    cursor: pointer;
+    border: 0;
+    background-color: #cacaca;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
+.carousel-indicators > .carousel-indicator.active {
+    opacity: 1;
+    background-color: #000000;
+}
+.slideshow {
+	flex: 0 0 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	padding-top: 50vh;
+}
+.slideshow img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+}
+.slideshow iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+}
+.slideshow-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 30px;
+	background-size: cover;
+}
+.slideshow {
+    width: 100%;
+	height: 100%;
+	flex: 0 0 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+.slideshow .slider {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+}
+button {
+	border-radius: 5px;
+	padding: 11px;
+	background-color: transparent;
+	border: 1px solid hsl(0,0%,0%);
+	cursor: pointer;
+}
+button:hover {
+	background-color: hsl(0,0%,25%);
+    border: 1px solid hsl(0,0%,25%);
+}
+.fa-angle-right {
+	font-size:24px;
+	color: hsl(0,0%,0%);
+}
+.fa-angle-left {
+	font-size:24px;
+	color: hsl(0,0%,0%);
+}
+/* Carousel End */
+/*About Me End*/
+
+
+/*Titles Start*/
+.centered {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title img{
+    width:100%;
+    height: 500px;
+    object-fit: cover;
+    border-top: 10px solid black;
+}
+.title-home img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Titles End*/
+
+
+/*Product Start*/
+.New-Arrivals {
+    background-color: white;
+    height: 50em;
+}
+.nabody {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.nacontainer {
+    margin: 20px;
+    width:97%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.nacontainer .nacard {
+    width:265px;
+    margin: 11px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #c90707;
+    border-radius: 16px;
+    box-shadow: 0 0 8px black;
+    background: #100c08;
+
+}
+.New-Arrivals h2 hr {
+    color: red;
+    width: 75%;
+    margin-left: auto;
+margin-right: auto;
+}
+.New-Arrivals h2 {
+    font-family: 'Demonized', sans-serif;
+    font-weight: lighter;                                                             
+    text-align: center;
+    font-size: 70px;
+    color:black;
+    text-shadow: 2px 2px #c90707;
+   /* background: pink;*/
+}
+.New-Arrivals h4 {
+    color: whitesmoke;
+}
+.nacontainer .nacard .naproduct-image {
+    width:100%;
+    margin: 20px auto;
+    margin-top: 0;
+}
+.nacontainer .nacard .naproduct-image img{
+    width: 100%;
+    transition: 0.4s;
+    height: 180px;
+}
+.nacontainer .nacard .naproduct-image img:hover{
+    transform: scale(1.1)
+}
+.nacontainer .nacard .naproduct-info h4 {
+    font-size: 18px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.nacontainer .nacard .butn {
+    width: 100%;
+}
+.nacontainer .nacard .butn button {
+    width: 100%;
+    padding: 10px;
+    background: #c90707;
+    border: 1px solid #c90707 ;
+    outline: none;
+    color:white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nacontainer .nacard .butn .inquire button  {
+    width: 100%;
+    padding: 10px;
+    background-color:tan;
+    border: 1px solid tan;
+    outline: none;
+    color:white;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nacontainer .nacard .butn button:hover {
+   color:yellow;
+}
+.pline{
+    width: 50%;
+    color: black;
+    background-color: black;
+    border-width: 0;
+    height: 2px;
+    padding: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pbody {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /*background: red;*/
+}
+.pcontainer {
+    margin: 20px;
+    width:85%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.pcontainer .pcard {
+    width: 432px;
+    height: 706px;
+    margin: 11px;
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.pcontainer .bgone .pcard {
+background-color:#e06765;
+}
+.pcontainer .bgtwo .pcard {
+    background-color:#f8ca9d;
+}
+.pcontainer .bgthree .pcard {
+    background-color:#a3c2f4;
+ }
+.pcontainer .bgfour .pcard {
+    background-color:#b4a8d5;
+ }
+.pcontainer .bgfive .pcard {
+    background-color:#ffe599;
+ }
+.pcontainer .bgsix .pcard {
+    background-color:#a2c4ca;
+ }
+.pcontainer .pcard .pproduct-image {
+    width: 100%;
+    height: 402px;
+    margin: 20px auto;
+    margin-top: 0;
+}
+.pcontainer .pcard .pproduct-image img{
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    background-color: white;
+    transition: 0.4s;
+    object-fit: cover;
+}
+.pcontainer .pcard .pproduct-image img:hover{
+    transform: scale(1.1)
+}
+.pcontainer .pcard .pproduct-info h4 {
+    font-size: 30px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.pcontainer .pcard .pproduct-info p {
+    font-size: 25px;
+}
+.sectionone {
+    background-color: #ce2524;
+}
+.sectiontwo {
+    background-color: #f7b26d ;
+}
+/*Product End*/
+
+
+/*Services Start*/
+.sectionwanted {
+    background-color: black;
+    width: 60%;
+    margin:auto;
+}
+.sectionwanted hr {
+    width: 50%;
+    color: white;
+    background-color: white;
+    border-width: 0;
+    height: 2px;
+    padding: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sectionwanted p {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+.sectionwantedone {
+    background-color: black;
+    padding-top:30px;
+}
+.sectionwantedone hr {
+    width: 50%;
+    color: white;
+    background-color: white;
+    border-width: 0;
+    height: 2px;
+    padding: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sectionwantedone p {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    padding: 10px;
+    padding-top: 50px;
+}
+.prcard hr {
+    width: 50%;
+    color: white;
+    background-color: white;
+    border-width: 0;
+    height: 2px;
+    padding: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sectionbuy {
+    background-color: black;
+}
+.Service {
+    font-size: 50px;
+    background-color: black;
+    padding-bottom:20px;
+    border-top: 10px solid black;
+}
+.stitle img{
+    width: 100%;
+    height: 100%;
+}
+.scentered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.scentered h1{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 100px;
+    color:#ffcb2f;
+}
+.sdesc hr {
+    width: 30%;
+}
+.sdesc p {
+    width: 1200px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.rl h1{
+    text-align: center;
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 50px;
+    padding-top: 50px;
+}
+.rl hr{
+    width: 50%;
+    color: white;
+    background-color: white;
+    border-width: 0;
+    height: 2px;
+    padding: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.repairtable h2{
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    margin: auto;
+    font-size: 60px;
+    font-family: 'Cabin Sketch', cursive;
+}
+.repairtable h4{
+    color: black;
+    font-family: 'Monoton';
+    padding-bottom: 0px;
+    font-size: 10px;
+}
+.repairtable table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: 80px;
+}
+td.tbline{
+    border-right: 1px solid black; 
+    width: 256px;
+}
+.repairtable table tr td {
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 10px;
+}
+.fix h1{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Monoton';
+    text-align: left;
+    font-size: 50px;
+}
+.fix p{
+    padding-top: 0;
+    margin-top: 0;
+    width: 85%;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: left;
+    font-size: 30px;
+}
+.rpimage img{
+    width: 600px;
+    display: flex;
+    margin: auto;
+    padding: 12px;
+    background-color: white;
+}
+.buy h1{
+    padding: 0;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'Monoton';
+    text-align: left;
+    font-size: 50px;
+}
+.buy p{
+    padding-top: 0;
+    margin-top: 0;
+    width: 90%;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+    text-align: left;
+    font-size: 30px;
+}
+.wposter img{
+    width: 800px;
+    display: flex;
+    margin: auto;
+}
+.webuy h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Monoton';
+    color: white;
+}
+.webuy hr {
+    width: 60%
+}
+.webuy img{
+    display: flex;
+    margin: auto;
+}
+.tablesect img{
+    width:auto;
+    height: 200px;
+    object-fit: cover;
+}
+.scard {
+    margin: auto;
+    height: 600px;
+    width: 400px;
+    background-color: white;
+    padding-top: 10px;
+}
+.scard img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    background-color: black;
+    transition: 0.4s;
+    object-fit: cover;
+}
+.scard img:hover{
+    transform: scale(1.1)
+}
+.scard h4 {
+    text-align: center;
+    font-size: 30px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.note p{
+    color:white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 15px;
+}
+.note a:visited {
+    color:white;
+}
+.row .rt1{
+    display:flex;
+    margin:auto;
+    text-align:center;
+}
+.row .rt2 {
+    display:flex;
+    margin:auto;
+    padding-top: 0px;
+    text-align:center;
+}
+td {
+    padding-right: 50px;
+}
+@media(max-width:1282px){
+    .sectionwanted h1 {
+        padding-top: 60px;
+    }
+}
+/*Services End*/
+
+
+/*Reviews Start*/
+.Review {
+    background-color: white;
+    margin-bottom: 80px;
+}
+.rn {
+    padding-right: 10px;
+}
+.rh img{
+    display: flex;
+    margin: auto;
+    width: 361.2px;
+}
+.rh p{
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+.re h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+.rfr1 {
+    display: flex;
+    padding-bottom: 10px;
+}
+.ric{
+    margin:auto;
+}
+.rtybox {
+    border-radius: 15px 50px;
+    border: 1px solid #BEBEBE;
+    padding: 8px;
+    height: 4em;
+    width: 34em;
+    margin-bottom: 18px;
+}
+.tybox2 {
+    display: flex;
+    margin: auto;
+    border: 1px solid #BEBEBE;
+    border-radius: 15px 15px;
+    padding: 8px;
+    height: 4em;
+    width: 68em;
+    margin-bottom: 18px;
+}
+.rfrm {
+    display:flex;
+    margin:auto;
+}
+.rfrm p{
+    font-size: 12px;
+    margin: 0;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+.rfrm table{
+    color: black;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+.rfrm td{
+    padding-left: 20px;
+}
+.rsmtx {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+.rsubox {
+    display: flex;
+    margin: auto;
+    border: 1px solid #BEBEBE;
+    border-radius: 15px 15px;
+    padding: 8px;
+    height: 4em;
+    width: 68em;
+    margin-bottom: 18px;
+}
+.rcbox {
+   border: 1px solid #BEBEBE;
+   border-radius: 15px 15px;
+    padding: 8px;
+    height: 10em;
+    width: 68em;
+    margin-bottom: 18px;
+    display: flex;
+    margin: auto;
+}
+.rsbbox {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #ffd966;
+    border-radius: 5px;
+    padding: 8px;
+    height: 4em;
+    width: 12em;
+    color: white;
+    background-color: #ffd966;
+    font-family: 'Comfortaa', cursive;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*Reviews End*/
+
+
+/*Conatct Start*/
+.Contact {
+    background-color: #ce2424;
+    height: 55em;
+    border-top: 10px solid black;
+}
+.tm p{
+    margin-top: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+.cf {
+    margin-top: 30px;
+}
+.cf img{
+    width: 590.2px;
+    height: 548.6px;
+    display:flex;
+    margin:auto;
+}
+.frm {
+    display:flex;
+    margin:auto;
+}
+.frm p{
+    font-size: 12px;
+    margin: 0;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+.frm table{
+    color: white;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+.frm td{
+    padding-left: 20px;
+}
+.smtx {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+.fic{
+    margin:auto;
+}
+.tybox {
+    border: 1px solid #BEBEBE;
+    padding: 8px;
+    height: 4em;
+    width: 34em;
+    margin-bottom: 18px;
+}
+.subox {
+    border: 1px solid #BEBEBE;
+    padding: 8px;
+    height: 4em;
+    width: 34em;
+    margin-bottom: 18px;
+}
+.cbox {
+   border: 1px solid #BEBEBE;
+    padding: 8px;
+    height: 10em;
+    width: 34em;
+    margin-bottom: 18px;
+}
+.sbbox {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    height: 4em;
+    width: 12em;
+    color: white;
+    background-color: black;
+    font-family: 'Comfortaa', cursive;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*Contact End*/
+
+
+/*Hours Start*/
+.Hours {
+    background-color: #f7b26d ;
+}
+.h h1 {
+    font-family: 'Cabin Sketch', cursive;
+    color: white;
+    text-align: center;
+}
+.haa {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.haa img{
+    display:flex;
+    margin:auto;
+    height: 529.5px;
+    width: 528px;
+}
+.haa iframe{
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 10px solid;
+    border-color: white;
+}
+/*Hours End*/
+
+
+/*Footer*/
+footer {
+	background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    height: 20em;
+}
+footer p{
+    font-size: 15px;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+.row h3 {
+    text-align: center;
+}
+.ftcpyrght {
+    margin-top: 120px;
+}
+.ftcpyrght p{
+    font-size: 15px;
+}
+.ftin p{
+    text-align: right;
+    font-size: 20px;
+    margin-right: 30px;
+}
+.SocialMedia {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.Copyright{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.privacy {
+    color: white;
+    
+}
+.privacy a{
+    margin-top: 2px;
+    margin-left: 41%;
+}
+.privacy a:visited {
+    color: white;
+}
+table{
+    margin-left: 30px;
+}
+footer table tr th,
+footer table tr td {
+    padding-right: 0.5rem;
+    text-align: left;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+.Watermark {
+    width: 100%;
+    background-color: grey;
+}
+.Watermark h3{
+    margin-left: 41%;
+    color: black;
+}
+/*footer end*/

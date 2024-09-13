@@ -1,0 +1,71 @@
+[24-Nov-2022 18:12:38 UTC] PHP Warning:  Undefined variable $tag in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 116
+[24-Nov-2022 18:12:38 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php:116
+Stack trace:
+#0 /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php(116): implode(', ', NULL)
+#1 {main}
+  thrown in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 116
+[24-Nov-2022 18:13:18 UTC] PHP Warning:  Undefined variable $tag in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 116
+[24-Nov-2022 18:13:18 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php:116
+Stack trace:
+#0 /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php(116): implode(', ', NULL)
+#1 {main}
+  thrown in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 116
+[24-Nov-2022 18:13:50 UTC] PHP Warning:  Undefined variable $tag in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 116
+[24-Nov-2022 18:13:50 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #1 ($pieces) must be of type array, string given in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php:116
+Stack trace:
+#0 /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php(116): implode(', ', NULL)
+#1 {main}
+  thrown in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 116
+[24-Nov-2022 18:27:24 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 98
+[24-Nov-2022 18:28:06 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 98
+[24-Nov-2022 18:28:17 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 98
+[24-Nov-2022 18:50:52 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 81
+[24-Nov-2022 18:53:36 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 138
+[24-Nov-2022 19:00:05 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 129
+[24-Nov-2022 19:00:05 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 130
+[24-Nov-2022 19:01:04 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 129
+[24-Nov-2022 19:01:04 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 130
+[24-Nov-2022 19:01:25 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 129
+[24-Nov-2022 19:01:25 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 130
+[24-Nov-2022 19:02:57 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 131
+[24-Nov-2022 19:02:57 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 132
+[24-Nov-2022 19:03:12 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 131
+[24-Nov-2022 19:03:12 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 132
+[24-Nov-2022 19:20:16 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 19:20:16 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 19:25:10 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 19:25:10 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 19:27:34 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 19:27:34 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 19:28:16 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 19:28:16 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 19:43:34 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 19:43:34 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 19:45:36 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 19:45:36 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 21:27:35 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 21:27:35 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 21:29:07 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 21:29:07 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 22:55:17 UTC] PHP Warning:  Array to string conversion in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 126
+[24-Nov-2022 22:55:17 UTC] PHP Warning:  Undefined variable $output in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 127
+[24-Nov-2022 23:16:47 UTC] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website Draft 1/Site.php on line 131
+[06-Dec-2022 01:02:35 UTC] PHP Parse error:  Unclosed '{' on line 617 in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 664
+[06-Dec-2022 01:08:34 UTC] PHP Parse error:  Unclosed '{' on line 619 in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 662
+[06-Dec-2022 01:15:19 UTC] PHP Warning:  Undefined array key "name" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 559
+[06-Dec-2022 01:15:19 UTC] PHP Warning:  Undefined array key "name" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 562
+[06-Dec-2022 01:15:19 UTC] PHP Warning:  Undefined array key "email" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 559
+[06-Dec-2022 01:15:19 UTC] PHP Warning:  Undefined array key "email" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 562
+[06-Dec-2022 01:15:19 UTC] PHP Warning:  Undefined array key "subject" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 559
+[06-Dec-2022 01:15:19 UTC] PHP Warning:  Undefined array key "subject" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 562
+[06-Dec-2022 01:15:19 UTC] PHP Warning:  Undefined array key "comment" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 559
+[06-Dec-2022 01:15:19 UTC] PHP Warning:  Undefined array key "comment" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 562
+[06-Dec-2022 01:15:37 UTC] PHP Warning:  Undefined array key "name" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 559
+[06-Dec-2022 01:15:37 UTC] PHP Warning:  Undefined array key "name" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 562
+[06-Dec-2022 01:15:37 UTC] PHP Warning:  Undefined array key "email" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 559
+[06-Dec-2022 01:15:37 UTC] PHP Warning:  Undefined array key "email" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 562
+[06-Dec-2022 01:15:37 UTC] PHP Warning:  Undefined array key "subject" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 559
+[06-Dec-2022 01:15:37 UTC] PHP Warning:  Undefined array key "subject" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 562
+[06-Dec-2022 01:15:37 UTC] PHP Warning:  Undefined array key "comment" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 559
+[06-Dec-2022 01:15:37 UTC] PHP Warning:  Undefined array key "comment" in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 562
+[06-Dec-2022 03:03:50 UTC] PHP Warning:  Undefined variable $subject in /home/drp9303/ctec4309.drp9303.uta.cloud/Found It Website/Site.php on line 431
